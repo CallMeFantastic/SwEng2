@@ -1,0 +1,61 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{pifont}
+\usepackage[dvipsnames]{xcolor}
+\graphicspath{{images/}}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\usepackage{pifont}
+\usepackage{float}
+\usepackage{longtable}
+\newcommand*\rot{\rotatebox{90}}
+
+
+\graphicspath{{images/}}
+\author{Frederik Saraci, Lorenzo Amata}
+\date{\today}
+\title{Politecnico di Milano
+	\\A.A. 2019\@-\@2020
+	\\Software Engineering 2: ``SafeStreets''
+	\\\textbf{D}esign \textbf{D}ocument}
+	\hypersetup{pdftitle={Software Requirement Specification},
+	pdfauthor={Frederik Saraci, Lorenzo Amata},
+	pdfsubject={RASD}
+	pdfkeywords={TeX, LaTeX, safestreets, RASD, SoftwareEngineering2},
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=blue,
+	filecolor=black,
+	urlcolor=blue,
+}
+
+\begin{document}
+\maketitle
+\begin{center}
+	\includegraphics[scale=0.2]{polimi-logo}
+\end{center}
+\clearpage
+\tableofcontents
+\clearpage
+\section{Introduction}
+\subfile{sections/introduction}
+\clearpage
+\section{Architectural Design}
+\subfile{sections/architectural_design}
+\clearpage
+\section{User Interface Design}
+\subfile{sections/user_interface}
+\clearpage
+\section{Requirements Traceability}
+\subfile{sections/requirements_traceability}
+\clearpage
+\section{Implementation,Integration and Testing}
+\subfile{sections/implementation}
+\clearpage
+\subfile{sections/appendix}
+
+\end{document}

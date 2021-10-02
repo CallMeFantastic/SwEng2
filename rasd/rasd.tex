@@ -1,0 +1,69 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{subfiles}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{alloy-style}
+\usepackage{subcaption}
+\usepackage[dvipsnames]{xcolor}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\usepackage{float}
+
+
+\graphicspath{{images/}}
+\author{Frederik Saraci, Lorenzo Amata} 
+\date{}
+\title{Politecnico di Milano
+	\\A.A. 2019\@-\@2020
+	\\Software Engineering 2: ``SafeStreets''
+	\\\textbf{R}equirements \textbf{A}nalysis \\and\\ \textbf{S}pecifications \textbf{D}ocument}
+	\hypersetup{pdftitle={Software Requirement Specification},  
+	pdfauthor={Frederik Saraci, Lorenzo Amata},
+	pdfsubject={RASD}
+	pdfkeywords={TeX, LaTeX, safestreets, RASD, SoftwareEngineering2},
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=blue,
+	filecolor=black,
+	urlcolor=blue,  
+}
+
+
+\begin{document}
+\maketitle
+\begin{center}
+	\includegraphics[scale=0.2]{polimi-logo}
+\end{center}
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+\subfile{sections/introduction}
+
+\clearpage
+\section{Overall description}
+\subfile{sections/overall_description}
+
+\clearpage
+
+
+\section{Specific Requirements}
+\subfile{sections/specific_requirements}
+
+\clearpage
+
+\section{Use Cases}
+\subfile{sections/use_cases}
+
+
+\section{Formal Analysis Using Alloy}
+\subfile{sections/alloy}
+
+\clearpage
+
+\subfile{sections/appendix}
+
+\end{document}
